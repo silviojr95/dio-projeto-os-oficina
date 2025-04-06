@@ -62,6 +62,7 @@ SELECT
     DATEDIFF(os.dataConclusao, os.dataEmissao) AS 'Duração (em dias)'
 FROM ordensServico os
 WHERE os.statusOS = 'Concluída';
+```
 
 - Listar equipes com status e número de mecânicos:
 ```sql
@@ -73,6 +74,7 @@ SELECT
 FROM equipes e
 LEFT JOIN mecanicos m ON e.idEquipe = m.idEquipe
 GROUP BY e.idEquipe, e.statusEquipe, e.tamanhoEquipe;
+```
 
 - Filtrar veículos do tipo "Carro":
 ```sql
@@ -84,6 +86,7 @@ SELECT
 FROM veiculos v
 INNER JOIN clientes c ON v.idCliente = c.idCliente
 WHERE v.tipo = 'Carro';
+```
 
 ##📌 Considerações Finais
 Este projeto foi elaborado para consolidar conhecimentos em modelagem e implementação de bancos de dados relacionais. A estrutura do banco foi pensada para ser robusta e flexível, permitindo facilmente novos módulos ou expansão no futuro.
