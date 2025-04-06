@@ -88,5 +88,5 @@ INNER JOIN clientes c ON v.idCliente = c.idCliente
 WHERE v.tipo = 'Carro';
 ```
 
-##📌 Considerações Finais
+## 📌 Considerações Finais
 Este projeto foi elaborado para consolidar conhecimentos em modelagem e implementação de bancos de dados relacionais. A estrutura do banco foi pensada para ser robusta e flexível, permitindo facilmente novos módulos ou expansão no futuro.
